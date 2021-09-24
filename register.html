@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Register</title>
+    <script src="./js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".cart").click(function(){
+        $(".modal").toggle(450);
+        });
+    });
+    $(document).ready(function(){
+        $("#close").click(function(){
+            $(".modal").hide();
+        });
+    });
+    $(document).ready(function(){
+        $("#close").click(function(){
+            $(".backdrop-body").hide();
+        });
+    });
+    $(document).ready(function(){
+        $(".cart").click(function(){
+            $(".backdrop-body").show();
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="main">
+        <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img class="logo__image" src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="menu__heading">
+                    <ul class="nav__menu__heading">
+                        <li><a href="./index.html" class="item">TRANG CHỦ</a></li>
+                        <li><a href="#" class="item">GIỚI THIỆU</a></li>
+                        <li><a href="#" class="item">SẢN PHẨM</a></li>
+                        <li><a href="#" class="item">TIN TỨC</a></li>
+                        <li><a href="#" class="item">HỎI ĐÁP</a></li>
+                        <li><a href="#" class="item">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+                <div class="hotline">
+                    <a href="#">
+                        <span>Gọi mua hàng</span>
+                        1900 6750
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <!-- header--bottom -->
+        <div class="header__bottom">
+            <div class="container">
+                <div class="category">
+                    <div class="icon-category">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <span>Danh mục</span>
+                        <div class="slider__menu slider__menu__account">
+                            <ul class="list__slider__menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <img src="./img/index-cate-icon-1.svg" alt="">
+                                        Điện thoại
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <img src="./img/index-cate-icon-2.svg" alt="">
+                                        Điện thoại
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <img src="./img/index-cate-icon-3.svg" alt="">
+                                        Điện thoại
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/index-cate-icon-4.svg" alt="">
+                                        Điện thoại
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/index-cate-icon-5.svg" alt="">
+                                        Điện thoại
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/index-cate-icon-6.svg" alt="">
+                                        Điện thoại
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/index-cate-icon-7.svg" alt="">
+                                        Điện thoại
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/index-cate-icon-8.svg" alt="">
+                                        Điện thoại
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Điện thoại
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Bạn cần tìm gì ?">
+                    <div class="icon-search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="account">
+                    <div class="account__box">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        <span>Tài khoản</span>
+                        <div class="account__main">
+                            <a href="./account.html" class="dangnhap">Đăng nhập</a>
+                            <a href="#" class="dangnhap">Đăng ký</a>
+                            <a href="#" class="dangnhap">Yêu thích</a>
+                        </div>
+                    </div>
+                    <div class="account__box">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        <span>Giỏ hàng</span>
+                        <span class="circle__bag">
+                            0
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header--bottom ends -->
+
+        <!-- login -->
+        <div class="login login-register">
+            <div class="container">
+                <ul class="header__login">
+                    <li>
+                        <a href="./index.html">Trang chủ  /</a>
+                    </li>
+                    <li>
+                        <span>Đăng ký tài khoản</span>
+                    </li>
+                </ul>
+                <div class="membership">
+                    <div class="banner__membership">
+                        <h4>QUYỀN LỢI THÀNH VIÊN</h4>
+                        <p>Mua hàng khắp thế giới cực dễ dàng, nhanh chóng</p>
+                        <p>Mua hàng khắp thế giới cực dễ dàng, nhanh chóng</p>
+                        <p>Mua hàng khắp thế giới cực dễ dàng, nhanh chóng</p>
+                    </div>
+                    <div class="account__register">
+                        <h3>Đăng ký</h3>
+                        <div class="account__member">
+                            <form action="" class="login-group">
+                                <label>
+                                    HỌ
+                                    <span>*</span>
+                                </label>
+                                <input type="text" placeholder="Nhập địa chỉ email">
+                            </form>
+                            <form action="" class="login-group">
+                                <label>
+                                    TÊN
+                                    <span>*</span>
+                                </label>
+                                <input type="text" placeholder="Nhập địa chỉ email">
+                            </form>
+                            <form action="" class="login-group">
+                                <label>
+                                    SỐ ĐIỆN THOẠI
+                                    <span>*</span>
+                                </label>
+                                <input type="text" placeholder="Nhập địa chỉ email">
+                            </form>
+                            <form action="" class="login-group">
+                                <label>
+                                    EMAIL
+                                    <span>*</span>
+                                </label>
+                                <input type="text" placeholder="Nhập địa chỉ email">
+                            </form>
+                            <form action="" class="login-group">
+                                <label>
+                                    MẬT KHẨU
+                                    <span>*</span>
+                                </label>
+                                <input type="text" placeholder="Nhập địa chỉ email">
+                            </form>
+                            <div class="btn-blue">
+                                <button>Tạo tài khoản</button>
+                            </div>
+                            <p class="or-account">
+                                hoặc đăng nhập qua
+                            </p>
+                            <div class="icon-app icon-app-register">
+                                <a href="#">
+                                    <img src="./img/fb-btn.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/gp-btn.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login ends -->
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="box-container">
+                    <div class="footer__box">
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <ul class="list__footer">
+                            <li>
+                                Địa chỉ:
+                                <span>70 Lu Gia, Ward 15, District 11, Ho Chi Minh City</span>
+                            </li>
+                            <li>
+                                Điện thoại:
+                                <a href="#">1900 6750</a>
+                            </li>
+                            <li>
+                                Email:
+                                <a href="#">support@sapo.vn</a>
+                            </li>
+                        </ul>
+                        <div class="support__cart">
+                            <h4 class="title__support">Hỗ trợ thanh toán</h4>
+                            <div class="image__cart">
+                                <img src="./img/cart/payment_1.svg" alt="">
+                                <img src="./img/cart/payment_2.svg" alt="">
+                                <img src="./img/cart/payment_3.svg" alt="">
+                                <img src="./img/cart/payment_4.svg" alt="">
+                                <img src="./img/cart/payment_5.svg" alt="">
+                                <img src="./img/cart/payment_6.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__box">
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <ul class="list__footer list__footer__nav">
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__box">
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <ul class="list__footer list__footer__nav">
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__box">
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <div class="footer__support">
+                            <div class="item-footer">
+                                Gọi mua hàng:
+                                <a href="#">1800.1800 </a>
+                                (8h00 - 22h00)
+                            </div>
+                            <div class="item-footer">
+                                Gọi mua hàng:
+                                <a href="#">1800.1800 </a>
+                                (8h00 - 22h00)
+                            </div>
+                            <div class="item-footer">
+                                Gọi mua hàng:
+                                <a href="#">1800.1800 </a>
+                                (8h00 - 22h00)
+                            </div>
+                        </div>
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <div class="social">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer ends -->
+    </div>
+</body>
+</html>

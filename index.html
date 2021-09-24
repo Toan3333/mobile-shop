@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+    <title>Document</title>
+    <script src="./js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".cart").click(function(){
+            $(".modal").toggle(450);
+        });
+    });
+    $(document).ready(function(){
+        $("#close").click(function(){
+            $(".modal").hide();
+        });
+    });
+    $(document).ready(function(){
+        $("#close").click(function(){
+            $(".backdrop-body").hide();
+        });
+    });
+    $(document).ready(function(){
+        $(".cart").click(function(){
+            $(".backdrop-body").show();
+        });
+    });
+
+    $(document).ready(function(){
+        $(".btn-danger").click(function(){
+            $(".cart__product").remove();
+        });
+    });
+
+    </script>
+</head>
+<body>
+    <div class="main">
+        <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img class="logo__image" src="./img/logo.png" alt="">
+                    </a>
+                    <div class="side-bars">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="menu__heading">
+                    <ul class="nav__menu__heading">
+                        <li><a href="./index.html" class="item">TRANG CHỦ</a></li>
+                        <li><a href="#" class="item">GIỚI THIỆU</a></li>
+                        <li><a href="./sanpham.html" class="item">SẢN PHẨM</a></li>
+                        <li><a href="#" class="item">TIN TỨC</a></li>
+                        <li><a href="#" class="item">HỎI ĐÁP</a></li>
+                        <li><a href="#" class="item">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+                <div class="hotline">
+                    <a href="#">
+                        <span>Gọi mua hàng</span>
+                        1900 6750
+                    </a>
+                </div>
+                <div class="account__box" id="cart">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </div>
+                <div class="search" id="search">
+                    <input type="text" placeholder="Bạn cần tìm gì ?">
+                    <div class="icon-search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <!-- header--bottom -->
+        <div class="header__bottom">
+            <div class="container">
+                <div class="category">
+                    <div class="icon-category">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                            <span>Danh mục</span>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Bạn cần tìm gì ?">
+                    <div class="icon-search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="account">
+                    <div class="account__box">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        <span>Tài khoản</span>
+                        <div class="account__main">
+                            <a href="./account.html" class="dangnhap">Đăng nhập</a>
+                            <a href="./register.html" class="dangnhap">Đăng ký</a>
+                            <a href="#" class="dangnhap">Yêu thích</a>
+                        </div>
+                    </div>
+                    <div class="account__box">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        <span class="cart">Giỏ hàng</span>
+                        <span class="circle__bag">
+                            0
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header--bottom ends -->
+
+        <!-- slider -->
+        <div class="slider">
+            <div class="container">
+                <div class="slider__menu">
+                    <ul class="list__slider__menu">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <img src="./img/index-cate-icon-1.svg" alt="">
+                                Điện thoại
+                            </a>
+                            <ul class="slider-list-box">
+                                <li class="slider-list-item">
+                                    <a href="#" class="slider-list-item-title">Apple</a>
+                                    <ul class="slider-list-bottom">
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="slider-list-item">
+                                    <a href="#">Apple</a>
+                                    <ul class="slider-list-bottom">
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="slider-list-item">
+                                    <a href="#">Apple</a>
+                                    <ul class="slider-list-bottom">
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="slider-list-item">
+                                    <a href="#">Apple</a>
+                                    <ul class="slider-list-bottom">
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="slider-list-item">
+                                    <a href="#">Apple</a>
+                                    <ul class="slider-list-bottom">
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                iPhone 12 Series
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <img src="./img/icon-ban-phim.png" alt="">
+                                bàn phím
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <img src="./img/icon-pc.png" alt="">
+                                PC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/index-cate-icon-4.svg" alt="">
+                                Điện thoại
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/index-cate-icon-5.svg" alt="">
+                                Điện thoại
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/index-cate-icon-6.svg" alt="">
+                                Điện thoại
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/index-cate-icon-7.svg" alt="">
+                                Điện thoại
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/index-cate-icon-8.svg" alt="">
+                                Điện thoại
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Điện thoại
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider__banner">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/slider_2.jpg" alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/slider_3.jpg" alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/slider_5.jpg" alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/slideshow_3.jpg" alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/slideshow_11.jpg" alt="">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/slideshow_12.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="slider__hero">
+                    <a href="#">
+                        <img src="./img/slider_6.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./img/slider_7.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./img/slider_8.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- slider ends -->
+
+        <!-- sale -->
+        <div class="sale">
+            <div class="container">
+                <div class="sale__btn">
+                    <a href="#" class="update__icon">
+                        <img class="image__update" src="./img/news_update_icon.svg" alt="">
+                        Tin khuyễn mãi
+                    </a>
+                </div>
+                <div class="feature">
+                    <div class="feature__first">
+                        <a href="">
+                            <div class="phone">
+                                <img src="./img/iphone.png" alt="">
+                            </div>
+                            <div class="name-product">
+                                Điện thoại
+                            </div>
+                            <div class="number-product">
+                                12 sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                    <div class="feature-group">
+                        <div class="row">
+                            <div class="product__vertical">
+                                <a href="" class="ps-product">
+                                    <div class="new-image">
+                                        <img src="./img/laptop.png" alt="">
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            Điện thoại
+                                        </div>
+                                        <div class="product-quantity">
+                                            12 sản phẩm
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__vertical">
+                                <a href="" class="ps-product">
+                                    <div class="new-image">
+                                        <img src="./img/tablet-computer.png" alt="">
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            Điện thoại
+                                        </div>
+                                        <div class="product-quantity">
+                                            12 sản phẩm
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__vertical">
+                                <a href="" class="ps-product">
+                                    <div class="new-image">
+                                        <img src="./img/power-bank-c0e5ea32-a686-46e4-82df-036294674c13.png" alt="">
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            Điện thoại
+                                        </div>
+                                        <div class="product-quantity">
+                                            12 sản phẩm
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__vertical">
+                                <a href="" class="ps-product">
+                                    <div class="new-image">
+                                        <img src="./img/speaker-73fa354a-a248-4c08-836f-cd13374624f3.png" alt="">
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            Điện thoại
+                                        </div>
+                                        <div class="product-quantity">
+                                            12 sản phẩm
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="product__vertical">
+                                <a href="" class="ps-product">
+                                    <div class="new-image">
+                                        <img src="./img/watch.png" alt="">
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            Điện thoại
+                                        </div>
+                                        <div class="product-quantity">
+                                            12 sản phẩm
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__vertical">
+                                <a href="" class="ps-product">
+                                    <div class="new-image">
+                                        <img src="./img/house.png" alt="">
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            Điện thoại
+                                        </div>
+                                        <div class="product-quantity">
+                                            12 sản phẩm
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__vertical">
+                                <a href="" class="ps-product">
+                                    <div class="new-image">
+                                        <img src="./img/cpu.png" alt="">
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            Điện thoại
+                                        </div>
+                                        <div class="product-quantity">
+                                            12 sản phẩm
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product__vertical">
+                                <a href="" class="ps-product">
+                                    <div class="new-image">
+                                        <img src="./img/computer.png" alt="">
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-info">
+                                            Điện thoại
+                                        </div>
+                                        <div class="product-quantity">
+                                            12 sản phẩm
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sale ends -->
+
+        <!-- Iphone-12 -->
+        <div class="iphone__12">
+            <div class="container">
+                <div class="title__iphone__12">
+                    <a href="#" class="background__title">IPHONE 12 CHÍNH HÃNG VN/A GIÁ TỐT</a>
+                </div>
+                <div class="product-iphone">
+                    <div class="box-container">
+                        <div class="product-box">
+                            <a href="./iphone-12-promax.html">
+                                <img src="./img/iphone-12/iphone-12-pro-max-xanh-duong-new-600x600-600x600-d4f1f529-b76d-4a27-b5fb-671f597248f9.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#" class="ten-sp">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <button class="add-cart">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/iphone-12/iphone-12-pro-max-xanh-duong-new-600x600-600x600-d4f1f529-b76d-4a27-b5fb-671f597248f9.jpg" alt="">
+                                <span class="sales">
+                                    <img src="./img/news_update_icon.svg" alt="">
+                                    Giảm 400.000₫
+                                </span>
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/iphone-12/iphone-12-pro-max-xanh-duong-new-600x600-600x600-d4f1f529-b76d-4a27-b5fb-671f597248f9.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/iphone-12/iphone-12-pro-max-xanh-duong-new-600x600-600x600-d4f1f529-b76d-4a27-b5fb-671f597248f9.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/iphone-12/iphone-12-pro-max-xanh-duong-new-600x600-600x600-d4f1f529-b76d-4a27-b5fb-671f597248f9.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Iphone-12 ends -->
+
+        <!-- slider banner -->
+        <div class="slider__banner__sale">
+            <div class="container">
+                <div class="box-container box-container-slider">
+                    <div class="image__slider-banner">
+                        <a href="#">
+                            <img src="img/feature_banner_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="image__slider-banner">
+                        <a href="#">
+                            <img src="img/feature_banner_2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider banner ends -->
+
+        <!-- Featured phone -->
+        <div class="Featured__phone">
+            <div class="container">
+                <h3 class="Featured__phone__title">
+                    <a href="#">ĐIỆN THOẠI NỔI BẬT NHẤT</a>
+                </h3>
+                <div class="featured__box__flex">
+                    <div class="col-left">
+                        <a href="#">
+                            <img src="./img/evo_block_product_banner_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-right">
+                        <div class="row">
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/637382656397324891-ip-12-mini-dd.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/iphone-noibat/637393169370871358-ip-11-dd.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/iphone-noibat/637393169370716242-ip-xr-dd.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/iphone-noibat/637230565234443213-ip-se-dd.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/iphone-noibat/iphone-8-plus.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/iphone-noibat/galaxy-note.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/iphone-noibat/galaxy-S.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/iphone-noibat/galaxy-a.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/iphone-noibat/oppo-reno.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/iphone-noibat/oppo-a.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Iphone 12 Series</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-iphone">
+                    <div class="box-container">
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/iphone-12/iphone-12-pro-max-xanh-duong-new-600x600-600x600-d4f1f529-b76d-4a27-b5fb-671f597248f9.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/iphone-noibat/oppo-reno5-trang-600x600-1-600x600.jpg" alt="">
+                                <span class="sales">
+                                    <img src="./img/news_update_icon.svg" alt="">
+                                    Giảm 400.000₫
+                                </span>
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/iphone-noibat/600x600-crop-iphone-12-mini-128gb-xtmobile-c32e1960-40fd-414b-8144-fb8517a9de97.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/iphone-noibat/637170935875912528-ss-s20-ultra-den-1.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/iphone-noibat/galaxy-z-fold2-5g-1-da9cf703-d4eb-49c8-bb44-4b8c7a5d4c64.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Featured__phone">
+            <div class="container">
+                <h3 class="Featured__phone__title">
+                    <a href="#">LAPTOP NỔI BẬT</a>
+                </h3>
+                <div class="featured__box__flex">
+                    <div class="col-left">
+                        <a href="#">
+                            <img src="./img/laptop/evo_block_product_banner_3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-right">
+                        <div class="row">
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/map.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Học tập - văn phòng</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/untitled-2.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Đồ họa - kỹ thuật</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/lap-3.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Mỏng nhẹ</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/gaming.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Laptop Gaming</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/cao-cap.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Cao cấp - sang trọng</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/macbook.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">MacBook</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/microsoft-surface-go-600x600.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Microsoft Surface</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/dell-xps.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Dell XPS</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/lenovo-thinkpad-t490s.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Lenovo Thinkpad</div>
+                                </a>
+                            </div>
+                            <div class="col-border">
+                                <a href="" class="search-item">
+                                    <div class="keyword-img">
+                                        <img src="./img/laptop/asus-zendbook.jpg" alt="">
+                                    </div>
+                                    <div class="keyword-info-title">Asus Zenbook</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-iphone">
+                    <div class="box-container">
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/xps-13-9310.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/laptop-asus-zenbook-ux425j-2.jpg" alt="">
+                                <span class="sales">
+                                    <img src="./img/news_update_icon.svg" alt="">
+                                    Giảm 400.000₫
+                                </span>
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/f0a3bf16c58311fe86ae3695df95ae4d.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/ccb55bb56f5b384e2819486a76922aad.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/f9fb4ffcd5f8a9ab04f5691d59bb6548.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-iphone">
+                    <div class="box-container">
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/e7c53b0158b775d555988491b01d1103.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/4225b9b34f41d1f718ce6f136ffcf96c.jpg" alt="">
+                                <span class="sales">
+                                    <img src="./img/news_update_icon.svg" alt="">
+                                    Giảm 400.000₫
+                                </span>
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/fa9543e473968692e579b66919286887.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/0aae2ebd7d4568cb577629db0a5c744b.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">
+                                <img src="./img/laptop/macbook-pro-16-touch-bar-2-6ghz-512gb-2019-1-2.jpg" alt="">
+                            </a>
+                            <h4 class="title__product">
+                                <a href="#">Iphone 12 Pro Max 256GB Chính hãng (VN/A)</a>
+                            </h4>
+                            <div class="price__box__product">
+                                <span class="price">33.590.000₫</span>
+                                <span class="old-price">33.990.000₫</span>
+                            </div>
+                            <div class="product__content">
+                                <p>Mua Đồng hồ thời trang giảm 40% (không kèm khuyến mãi khác).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featured phone end -->
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="box-container box-container-footer">
+                    <div class="footer__box">
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <ul class="list__footer">
+                            <li>
+                                Địa chỉ:
+                                <span>70 Lu Gia, Ward 15, District 11, Ho Chi Minh City</span>
+                            </li>
+                            <li>
+                                Điện thoại:
+                                <a href="#">1900 6750</a>
+                            </li>
+                            <li>
+                                Email:
+                                <a href="#">support@sapo.vn</a>
+                            </li>
+                        </ul>
+                        <div class="support__cart">
+                            <h4 class="title__support">Hỗ trợ thanh toán</h4>
+                            <div class="image__cart">
+                                <img src="./img/cart/payment_1.svg" alt="">
+                                <img src="./img/cart/payment_2.svg" alt="">
+                                <img src="./img/cart/payment_3.svg" alt="">
+                                <img src="./img/cart/payment_4.svg" alt="">
+                                <img src="./img/cart/payment_5.svg" alt="">
+                                <img src="./img/cart/payment_6.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__box">
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <ul class="list__footer list__footer__nav">
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__box">
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <ul class="list__footer list__footer__nav">
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế hoạt động</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__box">
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <div class="footer__support">
+                            <div class="item-footer">
+                                Gọi mua hàng:
+                                <a href="#">1800.1800 </a>
+                                (8h00 - 22h00)
+                            </div>
+                            <div class="item-footer">
+                                Gọi mua hàng:
+                                <a href="#">1800.1800 </a>
+                                (8h00 - 22h00)
+                            </div>
+                            <div class="item-footer">
+                                Gọi mua hàng:
+                                <a href="#">1800.1800 </a>
+                                (8h00 - 22h00)
+                            </div>
+                        </div>
+                        <h4 class="title__footer">Thông tin liên hệ</h4>
+                        <div class="social">
+                            <a href="https://www.facebook.com/toan.trananh.564">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer ends -->
+        <div class="backdrop-body backdrop-active">
+            
+        </div>
+        <div class="modal">
+            <div class="cart-content">
+                <div class="cart__heading">
+                    <h4 class="cart__title">GIỎ HÀNG</h4>
+                    <i class="fa fa-times" id="close" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="cart__product">
+                <div class="image__cart__product">
+                    <a href="#">
+                        <img src="./img/laptop/gaming.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cart__product__info">
+                    <h4><a href="#">Bàn phím Magic Keyboard iPad Pro 11 (MXQT2ZA/A)</a></h4>
+                    <div class="cart-item-name">
+                        <label for="" class="cart-quantity">
+                            Số lượng
+                        </label>
+                        <div class="cart-select">
+                           <select name="" id="">
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                           </select>
+                        </div>
+                    </div>
+                    <div class="right__price">
+                        <div class="cart__price">
+                            <span>8.999.000</span>
+                        </div>
+                        <div class="danger">
+                            <button class="btn-danger" type="button">Bỏ sản phẩm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__product">
+                <div class="image__cart__product">
+                    <a href="#">
+                        <img src="./img/laptop/gaming.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cart__product__info">
+                    <h4><a href="#">Bàn phím Magic Keyboard iPad Pro 11 (MXQT2ZA/A)</a></h4>
+                    <div class="cart-item-name">
+                        <label for="" class="cart-quantity">
+                            Số lượng
+                        </label>
+                        <div class="cart-select">
+                           <select name="" id="">
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                           </select>
+                        </div>
+                    </div>
+                    <div class="right__price">
+                        <div class="cart__price">
+                            <span>8.999.000</span>
+                        </div>
+                        <div class="danger">
+                            <button class="btn-danger" type="button">Bỏ sản phẩm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart__product">
+                <div class="image__cart__product">
+                    <a href="#">
+                        <img src="./img/laptop/gaming.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cart__product__info">
+                    <h4><a href="#">Bàn phím Magic Keyboard iPad Pro 11 (MXQT2ZA/A)</a></h4>
+                    <div class="cart-item-name">
+                        <label for="" class="cart-quantity">
+                            Số lượng
+                        </label>
+                        <div class="cart-select">
+                           <select name="" id="">
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                           </select>
+                        </div>
+                    </div>
+                    <div class="right__price">
+                        <div class="cart__price">
+                            <span>8.999.000</span>
+                        </div>
+                        <div class="danger">
+                            <button class="btn-danger" type="button">Bỏ sản phẩm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__product">
+                <div class="image__cart__product">
+                    <a href="#">
+                        <img src="./img/laptop/gaming.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cart__product__info">
+                    <h4><a href="#">Bàn phím Magic Keyboard iPad Pro 11 (MXQT2ZA/A)</a></h4>
+                    <div class="cart-item-name">
+                        <label for="" class="cart-quantity">
+                            Số lượng
+                        </label>
+                        <div class="cart-select">
+                           <select name="" id="">
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                           </select>
+                        </div>
+                    </div>
+                    <div class="right__price">
+                        <div class="cart__price">
+                            <span>8.999.000</span>
+                        </div>
+                        <div class="danger">
+                            <button class="btn-danger" type="button">Bỏ sản phẩm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__product">
+                <div class="image__cart__product">
+                    <a href="#">
+                        <img src="./img/laptop/gaming.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cart__product__info">
+                    <h4><a href="#">Bàn phím Magic Keyboard iPad Pro 11 (MXQT2ZA/A)</a></h4>
+                    <div class="cart-item-name">
+                        <label for="" class="cart-quantity">
+                            Số lượng
+                        </label>
+                        <div class="cart-select">
+                           <select name="" id="">
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                           </select>
+                        </div>
+                    </div>
+                    <div class="right__price">
+                        <div class="cart__price">
+                            <span>8.999.000</span>
+                        </div>
+                        <div class="danger">
+                            <button class="btn-danger" type="button">Bỏ sản phẩm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart__product">
+                <div class="image__cart__product">
+                    <a href="#">
+                        <img src="./img/laptop/gaming.jpg" alt="">
+                    </a>
+                </div>
+                <div class="cart__product__info">
+                    <h4><a href="#">Bàn phím Magic Keyboard iPad Pro 11 (MXQT2ZA/A)</a></h4>
+                    <div class="cart-item-name">
+                        <label for="" class="cart-quantity">
+                            Số lượng
+                        </label>
+                        <div class="cart-select">
+                           <select name="" id="">
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                               <option value="">1</option>
+                           </select>
+                        </div>
+                    </div>
+                    <div class="right__price">
+                        <div class="cart__price">
+                            <span>8.999.000</span>
+                        </div>
+                        <div class="danger">
+                            <button class="btn-danger" type="button">Bỏ sản phẩm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="cart__footer">
+                <div class="cart__footer__title">
+                    <h4>Tổng tiền:</h4>
+                    <span>8.990.000₫</span>
+                </div>
+                <div class="checkout__product">
+                    <button>Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        });
+    </script>
+</body>
+</html>
